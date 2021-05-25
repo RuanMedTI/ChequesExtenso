@@ -41,10 +41,10 @@ namespace ChequesExtenso.ConsoleApp.Tela
                 Console.WriteLine("Número inválido!");
             }
 
-            if (numero == 0.5)
+            if (numero == 0.05)
                 Console.WriteLine("Cinco Centavos de Real");
 
-            if (numero == 1)
+            if (numero == 1.00)
                 Console.WriteLine("Um Real");
 
             if (numero == 2.25)
