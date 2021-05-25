@@ -19,11 +19,19 @@ namespace ChequesExtenso.ConsoleApp.Tela
             do
             {
                 Console.Clear();
-                
-                Console.WriteLine("Cheque por extenso");
-                Console.WriteLine("Digite 1 para inserir os números");
 
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Cheque por extenso 1.1");
+                Console.WriteLine("--------------------------------");
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Digite 1 para inserir os números");
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Digite S para Sair");
+                Console.ResetColor();
 
                 opcao = Console.ReadLine();
 
