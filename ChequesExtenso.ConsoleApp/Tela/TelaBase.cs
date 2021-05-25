@@ -9,8 +9,6 @@ namespace ChequesExtenso.ConsoleApp.Tela
 {
     public class TelaBase
     {
-        const int CAPACIDADE_NUMEROS = 100;
-
         public static TelaNumeros telaNumeros = new TelaNumeros();
 
         public virtual object ObterTela()

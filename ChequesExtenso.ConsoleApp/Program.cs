@@ -9,8 +9,6 @@ namespace ChequesExtenso.ConsoleApp
 {
     class Program
     {
-        const int CAPACIDADE_NUMEROS = 100;
-
         static void Main(string[] args)
         {
             TelaBase telaBase = new TelaBase();
