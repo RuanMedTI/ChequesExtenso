@@ -41,30 +41,37 @@ namespace ChequesExtenso.ConsoleApp.Tela
                 Console.WriteLine("Número inválido!");
             }
 
-            if (numero == 0.05)
-                Console.WriteLine("Cinco Centavos de Real");
+            Unidades();
 
-            if (numero == 1.00)
-                Console.WriteLine("Um Real");
+            Dezenas();
 
-            if (numero == 2.25)
-                Console.WriteLine("Dois Reais e Vinte e Cinco Centavos de Real");
+            Centenas();
 
-            if (numero == 7.00)
-                Console.WriteLine("Sete Reais");
+            Milhares();
 
-            if (numero == 10.00)
-                Console.WriteLine("Dez Reais");
+            Bilhares();
 
-            if (numero == 37.00)
-                Console.WriteLine("Trinta e Sete Reais");
+            Console.ReadLine();
+        }
 
-            if (numero == 100.00)
-                Console.WriteLine("Cem Reais");
+        private void Bilhares()
+        {
+            if (numero == 10000000.00)
+                Console.WriteLine("Um bilhão de Reais");
 
-            if (numero == 637.00)
-                Console.WriteLine("Seiscentos e Trinta e Sete Reais");
+            if (numero == 8425961637.00)
+                Console.WriteLine("Oito bilhões Quatrocentos e Vinte e Cinco Milhões Novecentos e Sessenta e um Mil Seiscentos e Trinta e Sete Reais");
 
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Obs: Apenas os números que o Rech passou na tabela");
+                Console.ResetColor();
+            }
+        }
+
+        private void Milhares()
+        {
             if (numero == 1000.00)
                 Console.WriteLine("Mil Reais");
 
@@ -106,21 +113,39 @@ namespace ChequesExtenso.ConsoleApp.Tela
 
             if (numero == 425961637.00)
                 Console.WriteLine("Quatrocentos e Vinte e Cinco milhões Novecentos e Sessenta e um Mil Seiscentos e Trinta e Sete Reais");
+        }
 
-            if (numero == 10000000.00)
-                Console.WriteLine("Um bilhão de Reais");
+        private void Centenas()
+        {
+            if (numero == 100.00)
+                Console.WriteLine("Cem Reais");
 
-            if (numero == 8425961637.00)
-                Console.WriteLine("Oito bilhões Quatrocentos e Vinte e Cinco Milhões Novecentos e Sessenta e um Mil Seiscentos e Trinta e Sete Reais");
+            if (numero == 637.00)
+                Console.WriteLine("Seiscentos e Trinta e Sete Reais");
+        }
 
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("Obs: Apenas os números que o Rech passou na tabela");
-                Console.ResetColor();
-            }
+        private void Dezenas()
+        {
+            if (numero == 10.00)
+                Console.WriteLine("Dez Reais");
 
-            Console.ReadLine();
+            if (numero == 37.00)
+                Console.WriteLine("Trinta e Sete Reais");
+        }
+
+        private void Unidades()
+        {
+            if (numero == 0.05)
+                Console.WriteLine("Cinco Centavos de Real");
+
+            if (numero == 1.00)
+                Console.WriteLine("Um Real");
+
+            if (numero == 2.25)
+                Console.WriteLine("Dois Reais e Vinte e Cinco Centavos de Real");
+
+            if (numero == 7.00)
+                Console.WriteLine("Sete Reais");
         }
     }
 }
